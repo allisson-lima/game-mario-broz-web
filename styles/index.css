@@ -17,7 +17,7 @@
     width: 100%;
     height: 600px;
     position: relative;
-    background-color: #ffffff;
+    background: linear-gradient(#87ceeb, #e0f6ff);
     overflow: hidden;
     z-index: 1000;
  }
@@ -43,6 +43,12 @@
  .floor{
     width: 100%;
  }
+ .clouds{
+    width: 450px;
+    position: absolute;
+    background-color: #ffffff00;
+    animation: clouds-animation 20s infinite linear;
+ }
 
  @keyframes pipe-obstacle-animation {
     from{
@@ -67,6 +73,15 @@
     }
     100%{
         bottom: 0;
+    }
+ }
+
+ @keyframes clouds-animation {
+    from{
+        right: -450px;
+    }
+    to{
+        right: 100%;
     }
  }
 
