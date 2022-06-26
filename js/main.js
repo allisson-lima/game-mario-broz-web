@@ -15,6 +15,9 @@ const onLoopCheck = setInterval(() => {
     if (pipeObstaclePosition <= 120 && marioPosition < 80 && pipeObstaclePosition > 0) {
         pipe.style.animation = "none"
         pipe.style.left = `${pipeObstaclePosition}px`
+
+        mario.style.animation = "none"
+        mario.style.bottom = `${marioPosition}px`
     }
 }, 10)
 
