@@ -15,11 +15,23 @@
     height: 600px;
     position: relative;
     background-color: #ffffff;
+    overflow: hidden;
  }
 
  .pipe-obstacle{
     position: absolute;
     bottom: 0;
     width: 80px;
+    animation: pipe-obstacle-animation 2s infinite linear;
+    background-color: #ffffff;
+ }
+
+ @keyframes pipe-obstacle-animation {
+    from{
+        right: -80px;
+    }
+    to{
+        right: 100%;
+    }
  }
 
