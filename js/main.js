@@ -9,8 +9,10 @@ function jumpMario() {
 }
 const onLoopCheck = setInterval(() => {
     const pipeObstaclePosition = pipe.offsetLeft;
+    const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '')
+    console.log(marioPosition);
     console.log(pipeObstaclePosition);
-    if (pipeObstaclePosition <= 120) {
+    if (pipeObstaclePosition <= 120 && marioPosition < 80 && pipeObstaclePosition > 0) {
         pipe.style.animation = "none"
         pipe.style.left = `${pipeObstaclePosition}px`
     }
