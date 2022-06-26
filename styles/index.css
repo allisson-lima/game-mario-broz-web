@@ -19,6 +19,7 @@
     position: relative;
     background-color: #ffffff;
     overflow: hidden;
+    z-index: 1000;
  }
 
  .pipe-obstacle{
@@ -26,7 +27,18 @@
     bottom: 0;
     width: 80px;
     animation: pipe-obstacle-animation 2s infinite linear;
-    background-color: #ffffff;
+    background-color: #ffffff00;
+ }
+ .mario{
+    position: absolute;
+    bottom: 0;
+    width: 155px;
+    background-color: #ffffff00;
+    
+ }
+
+ .jump-mario{
+    animation: jump-mario-animation 500ms;
  }
  .floor{
     width: 100%;
@@ -38,6 +50,23 @@
     }
     to{
         right: 100%;
+    }
+ }
+ @keyframes jump-mario-animation{
+    0%{
+        bottom: 0;
+    }
+    40%{
+        bottom: 180px;
+    }
+    50%{
+        bottom: 185px;
+    }
+    60%{
+        bottom: 185px;
+    }
+    100%{
+        bottom: 0;
     }
  }
 
