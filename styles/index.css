@@ -26,7 +26,7 @@
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: pipe-obstacle-animation 2s infinite linear;
+    animation: pipe-obstacle-animation 1.5s infinite linear;
     background-color: #ffffff00;
  }
  .mario{
