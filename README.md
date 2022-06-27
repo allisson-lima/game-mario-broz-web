@@ -14,7 +14,6 @@ class="mario-readme"
 <h4 align="center"> 
 	🚧  html - css - js 🚀 Em construção...  🚧
 </h4>
-<a href="https://i.imgur.com/AHVouzN.mp4">
 <div align="center">
 <img
           src="/assets/gamer.gif"
@@ -22,7 +21,6 @@ class="mario-readme"
           class="pipe-obstacle"
         />
 </div>
-</a>
 
 <div align="center">
 <a align="center" href="https://i.imgur.com/AHVouzN.mp4">
