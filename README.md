@@ -21,12 +21,10 @@ class="mario-readme"
           class="pipe-obstacle"
         />
 </div>
-
-<a align="center" href="https://i.imgur.com/AHVouzN.mp4">
 <div align="center">
-<h4 style="color: #5477eb;">Assista com áudio</h4>
+<h4 style="color: #5477eb;"><a align="center" href="https://i.imgur.com/AHVouzN.mp4">
+Assista com áudio</a></h4>
 </div>
-</a>
 
 ---
 
