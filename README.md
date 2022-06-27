@@ -51,7 +51,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### Autor
 
-<a href="https://blog.rocketseat.com.br/author/thiago/">
+<a href="https://www.linkedin.com/in/allisson-lima-3382121b6/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/82707621?v=4" width="100px;" alt=""/>
  <br />
  <sub><b>Allisson Lima</b></sub></a> <a href="https://blog.rocketseat.com.br/author/thiago//" title="Rocketseat">🚀</a>
