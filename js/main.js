@@ -83,13 +83,15 @@ document.addEventListener('keypress', function (e) {
         }, 500)
     }
 })
+
+
+
+
 const onLoopCheck = setInterval(() => {
+
     setTimeout(() => {
-        if (pipeObstaclePosition === 16) {
-            pipe.src = "/assets/pipe.png"
-            console.log("Chegouuu");
-        }
-    }, 3010)
+        pipe.src = "/assets/pipe.png"
+    }, 8095)
 
     const pipeObstaclePosition = pipe.offsetLeft;
 

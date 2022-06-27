@@ -14,13 +14,20 @@ class="mario-readme"
 <h4 align="center"> 
 	🚧  html - css - js 🚀 Em construção...  🚧
 </h4>
-
+<a href="https://i.imgur.com/AHVouzN.mp4">
 <div align="center">
 <img
           src="/assets/gamer.gif"
           alt="obstaculo para mario"
           class="pipe-obstacle"
         />
+</div>
+</a>
+
+<div align="center">
+<a align="center" href="https://i.imgur.com/AHVouzN.mp4">
+<h4 style="color: #5477eb;">Assista com áudio</h4>
+</a>
 </div>
 
 ---
