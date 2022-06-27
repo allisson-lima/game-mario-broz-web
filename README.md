@@ -34,7 +34,8 @@ Assista com áudio</a></h4>
 - [x] Trilha sonora
 - [x] Cronômetro
 - [x] Obstáculos diferentes
-- [ ] Tela de Start
+- [ ] Refatoração no designer
+- [ ] Tela de start
 - [ ] Contagem no game over
 - [ ] Responsividade
 - [ ] Animação no background
