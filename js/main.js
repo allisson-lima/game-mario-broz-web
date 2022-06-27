@@ -58,22 +58,44 @@ function timer() {
     document.getElementById('millisecond').innerText = returnData(millisecond / 10);
 }
 
-function returnData(input) {7
+function returnData(input) {
+    7
     return input > 10 ? input : `0${input}`
 }
 audio.src = source;
-function jumpMario() {
+function jumpMario(e) {
     mario.classList.add('jump-mario')
     setTimeout(() => {
         mario.classList.remove('jump-mario')
     }, 500)
 }
+let gameOver = false
+
+
+
+
+document.addEventListener('keypress', function (e) {
+    const space = 32;
+    if (e.which === space) {
+        mario.classList.add('jump-mario')
+        setTimeout(() => {
+            mario.classList.remove('jump-mario')
+        }, 500)
+    }
+})
 const onLoopCheck = setInterval(() => {
+    setTimeout(() => {
+        if (pipeObstaclePosition === 16) {
+            pipe.src = "/assets/pipe.png"
+            console.log("Chegouuu");
+        }
+    }, 3010)
 
     const pipeObstaclePosition = pipe.offsetLeft;
+
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '')
     console.log(marioPosition);
-    console.log(pipeObstaclePosition);
+    console.log({ pipeObstaclePosition });
     if (pipeObstaclePosition <= 120 && marioPosition < 80 && pipeObstaclePosition > 0) {
         pause()
         audio.pause()
@@ -89,17 +111,23 @@ const onLoopCheck = setInterval(() => {
         mario.style.width = "75px"
         mario.style.left = "50px"
 
+        gameOver = true
+
         clearInterval(onLoopCheck)
         setTimeout(() => {
             document.location.reload(true);
         }, 8000)
     }
 }, 10)
+document.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter' && !gameOver) {
+        btnStart.click();
+        onLoopCheck
 
-
-
-document.addEventListener('keydown', jumpMario)
+    }
+},);
 btnStart.addEventListener('click', () => {
+    onLoopCheck
     audio.play();
     btnStart.style.display = "none"
     container.style.display = "flex"
