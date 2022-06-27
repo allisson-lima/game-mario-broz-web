@@ -22,11 +22,11 @@ class="mario-readme"
         />
 </div>
 
-<div align="center">
 <a align="center" href="https://i.imgur.com/AHVouzN.mp4">
+<div align="center">
 <h4 style="color: #5477eb;">Assista com áudio</h4>
-</a>
 </div>
+</a>
 
 ---
 
