@@ -18,6 +18,7 @@
 
 
  .containerGamer{
+   max-width: 1300px;
     width:80%;
     height: 600px;
     position: relative;
@@ -47,6 +48,7 @@
     animation: jump-mario-animation 500ms;
  }
  .floor{
+   max-width: 1300px;
     width: 80%;
     margin: 0 auto;
     display: none;
@@ -80,6 +82,10 @@
     font-size: 40px;
     z-index: 1000;
     padding: 20px;
+ }
+ .mario-readme{
+   width: 30px;
+   height: 20px;
  }
  span{
     background-color: #ffffff00;
