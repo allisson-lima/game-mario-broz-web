@@ -9,13 +9,21 @@
     <title>Mario Broz</title>
   </head>
   <body>
-    <button class="btn">comecar</button>
     <div class="container">
+      <div class="containerStart">
+        <button class="start">Iniciar</button>
+      </div>
       <audio
         src="/assets/music/musicGamerOver.mp3"
         class="music-game-over"
       ></audio>
       <div class="containerGamer">
+        <div class="countDown">
+          <span id="hour">00</span>:<span id="minute">00</span>:<span
+            id="second"
+            >00</span
+          >:<span id="millisecond">000</span>
+        </div>
         <img
           src="/assets/clouds.png"
           alt="obstaculo para mario"
@@ -26,6 +34,11 @@
           src="/assets/pipe.png"
           alt="obstaculo para mario"
           class="pipe-obstacle"
+        />
+        <img
+          src="/assets/koope.png"
+          alt="obstaculo para mario"
+          class="koope-obstacle"
         />
       </div>
       <img src="/assets/floor.png" alt="obstaculo para mario" class="floor" />
