@@ -52,14 +52,20 @@
     width: 80%;
     margin: 0 auto;
     display: none;
-
  }
  .clouds{
-    width: 450px;
+    width: 350px;
     margin-top: 50px;
     position: absolute;
     background-color: #ffffff00;
     animation: clouds-animation 20s infinite linear;
+ }
+ .clouds-min-two{
+    width: 250px;
+    margin-top: 250px;
+    position: absolute;
+    background-color: #ffffff00;
+    animation: clouds-animation 45s infinite linear;
  }
  .koope-obstacle{
     position: absolute;
@@ -68,20 +74,16 @@
     animation: koope-obstacle-animation 15s infinite linear;
     background-color: #ffffff00;
  }
- .start{
-    width: 200px;
-    height: 50px;
-    background-color: #fff;
-    font-size: 18px;
- }
 
  .countDown{
     position: absolute;
     color: #fff;
     background-color: #ffffff00;
-    font-size: 40px;
+    font-size: 30px;
     z-index: 1000;
     padding: 20px;
+    align-items: center;
+    display: flex;
  }
  .mario-readme{
    width: 30px;
@@ -90,7 +92,67 @@
  span{
     background-color: #ffffff00;
     z-index: 1000;
+    font-family: 'Press Start 2P', cursive;
 
+ }
+ .titleStart{
+   color: #e0f6ff;
+ }
+ .containerStart{
+   width: 40%;
+   height: 600px;
+   margin: 0 auto;
+   background-color: rgb(51,51,51,0.15);
+   box-shadow: 3px 2px 5px rgb(17,17,17,0.55);
+   backdrop-filter: blur(8px);
+   -webkit-backdrop-filter: blur(8px);
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   --angle: 0deg;
+   border: 5px solid;
+   border-image: linear-gradient(var(--angle), #12c2e9, #bea4ca, #e40d1b) 1;
+   animation: 5s rotate linear infinite;
+ }
+
+.start{
+   width: 250px;
+   height: 50px;
+   background: rgb(29, 195, 29);
+   color: #fff;
+   cursor: pointer;
+   border-radius: 10px;
+   font-size: 18px;
+   margin: 50px 20px 10px 20px;
+   border: none;
+ }
+
+ .imgMarioStart{
+   margin-left: -50px;
+ }
+
+.btn{
+   width: 250px;
+   height: 50px;
+   background: linear-gradient(#87ceeb, #e0f6ff);
+   color: rgb(29, 29, 195);
+   cursor: pointer;
+   border-radius: 10px;
+   font-size: 18px;
+   margin: 10px;
+   border: none;
+ }
+ 
+ @keyframes rotate {
+   to {
+     --angle: 360deg;
+   }
+ }
+ @property --angle {
+   syntax: '<angle>';
+   initial-value: 0deg;
+   inherits: false;
  }
 
  @keyframes pipe-obstacle-animation {

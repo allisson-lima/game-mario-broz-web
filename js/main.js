@@ -1,12 +1,16 @@
 const source = "/assets/music/themeMusic.mp3";
+const sourceJump = "/assets/music/jump.mp3";
+const audioJump = new Audio();
 const audio = new Audio();
 const mario = document.querySelector('.mario')
 const pipe = document.querySelector('.pipe-obstacle')
 const musicTheme = document.querySelector('.musicTheme')
 const musicGameOver = document.querySelector('.music-game-over')
 const btnStart = document.querySelector('.start')
+const containerStart = document.querySelector('.containerStart')
 const container = document.querySelector('.containerGamer')
 const floor = document.querySelector('.floor')
+const cloudMin = document.querySelector('.clouds-animation-min')
 
 let hour = 0;
 let minute = 0;
@@ -63,20 +67,19 @@ function returnData(input) {
     return input > 10 ? input : `0${input}`
 }
 audio.src = source;
-function jumpMario(e) {
-    mario.classList.add('jump-mario')
-    setTimeout(() => {
-        mario.classList.remove('jump-mario')
-    }, 500)
-}
+audioJump.src = sourceJump
+
 let gameOver = false
 
 
 
 
 document.addEventListener('keypress', function (e) {
+
     const space = 32;
     if (e.which === space) {
+        audioJump.play()
+        audioJump.volume = 0.5
         mario.classList.add('jump-mario')
         setTimeout(() => {
             mario.classList.remove('jump-mario')
@@ -84,20 +87,16 @@ document.addEventListener('keypress', function (e) {
     }
 })
 
-
-
-
 const onLoopCheck = setInterval(() => {
 
     setTimeout(() => {
         pipe.src = "/assets/pipe.png"
-    }, 8095)
+    }, 4165)
 
     const pipeObstaclePosition = pipe.offsetLeft;
 
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '')
-    console.log(marioPosition);
-    console.log({ pipeObstaclePosition });
+
     if (pipeObstaclePosition <= 120 && marioPosition < 80 && pipeObstaclePosition > 0) {
         pause()
         audio.pause()
@@ -118,6 +117,7 @@ const onLoopCheck = setInterval(() => {
         clearInterval(onLoopCheck)
         setTimeout(() => {
             document.location.reload(true);
+            reset()
         }, 8000)
     }
 }, 10)
@@ -125,13 +125,13 @@ document.addEventListener('keypress', function (e) {
     if (e.key === 'Enter' && !gameOver) {
         btnStart.click();
         onLoopCheck
-
     }
 },);
 btnStart.addEventListener('click', () => {
-    onLoopCheck
     audio.play();
+    onLoopCheck
     btnStart.style.display = "none"
+    containerStart.style.display = "none"
     container.style.display = "flex"
     floor.style.display = "flex"
 })
