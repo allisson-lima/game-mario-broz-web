@@ -58,7 +58,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <a href="https://www.linkedin.com/in/allisson-lima-3382121b6/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/82707621?v=4" width="100px;" alt=""/>
  <br />
- <sub><b>Allisson Lima</b></sub></a> <a href="https://www.linkedin.com/in/allisson-lima-3382121b6/" title="Rocketseat">🚀</a>
+ <sub><b>Allisson Lima & Joseph</b></sub></a> <a href="https://www.linkedin.com/in/allisson-lima-3382121b6/" title="Rocketseat">🚀</a>
 
 Dedico ao meu amigo ❤️ Jorge Luiz
 
